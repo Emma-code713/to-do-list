@@ -1,0 +1,83 @@
+body{
+    background-image: url(to\ do.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient();
+    flex-direction: column;
+}
+h1{
+    color: white;
+    font-size: 90px;
+    display: block;
+}
+.main{
+    width: 500px;
+    height: auto;
+}
+#input-div{
+ width: 500px;
+ height: 100px;
+
+}
+#inputTodo{
+    width: 450px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5%;
+}
+button{
+    width: 40px;
+    height: 30px;
+    background-color: cyan;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+#list-container{
+    background-color: white;
+    margin-top: 10px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 30px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: red;
+}
